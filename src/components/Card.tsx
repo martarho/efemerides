@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
-export const Card = (props: { areaID: number; cardTitle: string; cardLocation: string; cardDescription: string; totalPlants: number }) => {
+const Card = (props: { areaID: number; cardTitle: string; cardLocation: string; cardDescription: string; totalPlants: number }) => {
     const { areaID, cardTitle, cardLocation, cardDescription, totalPlants } = props;
     return (
         <StyledCard>
@@ -60,3 +60,4 @@ h3 {
     display:inline;
 }
 `
+export default Card

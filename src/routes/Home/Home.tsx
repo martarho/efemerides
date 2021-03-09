@@ -1,9 +1,6 @@
 import React from "react";
 import { useQuery, gql } from '@apollo/client';
-
-
-import { Card, NewCard } from "../../components/index";
-
+import { Card } from "../../components/index";
 import { gardenAreas } from "./data"
 import { CardContainer } from "./Home.style"
 
