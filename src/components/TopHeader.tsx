@@ -5,7 +5,7 @@ import useOnClickOutside from "../hooks/useOnClickOutside";
 
 import styled from "styled-components";
 
-const TopHeader = (props: {}) => {
+const TopHeader = (props: Record<string, unknown>) => {
     const [isOpen, setOpen] = useState(false);
     const node = useRef(null);
     useOnClickOutside(node, () => setOpen(false));

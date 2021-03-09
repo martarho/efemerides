@@ -2,12 +2,28 @@ import React from "react";
 import ReactDOM from "react-dom";
 //import App from "./App/App";
 import App from "./app";
+import { ApolloClient, ApolloProvider, createHttpLink, InMemoryCache } from '@apollo/client'
 
-import reportWebVitals from "./reportWebVitals";
+const client = new ApolloClient({
+  link: createHttpLink({
+    uri: 'http://127.0.0.1:8000/',
+    // headers: {
+    //     Authorization: 'Bearer Token',
+    //     accept: 'application/json',
+    //     'Content-Type': 'application/json'
+    // },
+    useGETForQueries: true,
+    //fetchOptions: { mode: 'no-cors' }
+  }),
+  cache: new InMemoryCache(),
+});
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <ApolloProvider client={client}>
+      <App />
+    </ApolloProvider>
   </React.StrictMode>,
   document.getElementById("root")
 );

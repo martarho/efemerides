@@ -1,7 +1,7 @@
 export const gardenAreas = [
     {
         id: 1,
-        title: "Low bed",
+        name: "Low bed",
         location: "Front yard - right",
         description: "Low bed next to the big Apple tree",
         currentPlants: [
@@ -11,7 +11,7 @@ export const gardenAreas = [
     },
     {
         id: 2,
-        title: "Hexagonal bed",
+        name: "Hexagonal bed",
         location: "Front yard - left",
         description: "Hexagonal raised bed",
         currentPlants: [
@@ -21,7 +21,7 @@ export const gardenAreas = [
     },
     {
         id: 3,
-        title: "Raised bed entrance",
+        name: "Raised bed entrance",
         location: "Front yard - path",
         description: "New raised beds along the path",
         currentPlants: [
@@ -30,7 +30,7 @@ export const gardenAreas = [
     },
     {
         id: 4,
-        title: "Big planting area",
+        name: "Big planting area",
         location: "Side of the house",
         description: "Ground planting area",
         currentPlants: [
@@ -41,7 +41,7 @@ export const gardenAreas = [
     },
     {
         id: 5,
-        title: "Lattenrost raised bed",
+        name: "Lattenrost raised bed",
         location: "Shed",
         description: "",
         currentPlants: [
@@ -53,7 +53,7 @@ export const gardenAreas = [
     },
     {
         id: 6,
-        title: "Destroyed raised bed",
+        name: "Destroyed raised bed",
         location: "",
         description: "",
         currentPlants: [
@@ -64,7 +64,7 @@ export const gardenAreas = [
     },
     {
         id: 7,
-        title: "Middle raised bed",
+        name: "Middle raised bed",
         location: "",
         description: "",
         currentPlants: [
@@ -75,7 +75,7 @@ export const gardenAreas = [
     },
     {
         id: 8,
-        title: "Small raised bed",
+        name: "Small raised bed",
         location: "",
         description: "",
         currentPlants: [
@@ -86,7 +86,7 @@ export const gardenAreas = [
     },
     {
         id: 9,
-        title: "Pallette raised bed",
+        name: "Pallette raised bed",
         location: "",
         description: "",
         currentPlants: [
@@ -97,7 +97,7 @@ export const gardenAreas = [
     },
     {
         id: 10,
-        title: "Outdoor nursery",
+        name: "Outdoor nursery",
         location: "",
         description: "",
         currentPlants: [
