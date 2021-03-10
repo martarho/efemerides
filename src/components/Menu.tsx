@@ -8,12 +8,12 @@ const Menu = (props: { isOpen: boolean }) => {
       <a href="/">
         <span role="img" aria-label="Home">
         </span>
-        Option 1
+        Home
       </a>
       <a href="/">
         <span role="img" aria-label="Configuration">
         </span>
-        Option 2
+        Configuration
       </a>
     </StyledMenu>
   );
