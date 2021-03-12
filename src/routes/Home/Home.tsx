@@ -3,34 +3,11 @@ import { useQuery, gql } from '@apollo/client';
 import { Card } from "../../components/index";
 import { gardenAreas } from "./data"
 import { CardContainer } from "./Home.style"
-
-interface Area {
-    id: number;
-    name: string;
-    location: string;
-    area_type: string;
-}
-
-interface AreasData {
-    areas: Area[];
-}
-
-const GET_ALL_AREAS = gql`
-query GetAllAreas {
-  areas {
-    id
-    name
-    location
-    area_type
-  }
-}
-`;
-
+import { getAllAreas } from "../../graphql/requests"
+import { GET_ALL_AREAS } from "../../graphql/queries"
 
 const Home = (props: {}) => {
-    const { loading, error, data } = useQuery<AreasData>(
-        GET_ALL_AREAS, { fetchPolicy: 'no-cache' }
-    );
+    const { loading, error, data } = getAllAreas(GET_ALL_AREAS);
     if (loading) return <p>Loading</p>;
     if (error) return <pre>Bad: {error.graphQLErrors.map(({ message }, i) => (
         <span key={i}>{message}</span>

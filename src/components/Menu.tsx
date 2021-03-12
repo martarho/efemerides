@@ -6,19 +6,14 @@ const Menu = (props: { isOpen: boolean }) => {
   return (
     <StyledMenu open={isOpen}>
       <a href="/">
-        <span role="img" aria-label="Option 1">
+        <span role="img" aria-label="Home">
         </span>
-        Option 1
+        Home
       </a>
       <a href="/">
-        <span role="img" aria-label="Option 1">
+        <span role="img" aria-label="Configuration">
         </span>
-        Option 2
-      </a>
-      <a href="/">
-        <span role="img" aria-label="Option 3">
-        </span>
-        Option 3
+        Configuration
       </a>
     </StyledMenu>
   );
